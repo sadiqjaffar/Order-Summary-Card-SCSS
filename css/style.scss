@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+       height: 900px;
+        
+   
+    .wave{
+        
+        background-image: url("/images/pattern-background-desktop.svg");
+        width: 100%;
+        aspect-ratio: 960/300;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+
+
+        .container{
+            position: absolute;
+            overflow: hidden;
+            background-color:  hsl(225, 100%, 98%);
+            max-width: 450px;
+            border-radius: 20px;
+            z-index: 2;
+            top:7em;
+            
+            
+            h2{
+                text-align: center;
+                font-family: 'Red Hat Display', sans-serif;
+                font-weight: 900;
+                color: hsl(223, 47%, 23%);
+                margin: 1em;
+            }
+            p{
+                text-align: center;
+                word-wrap: break-word;
+                font-family: 'Red Hat Display', sans-serif;
+                font-weight: 500;
+                color:  hsl(224, 23%, 55%);
+                font-size: 16px;
+                margin: 1em 4em;
+                line-height: 30px;
+            }
+
+            .card{
+                display: block;
+                position: relative;
+                background-color:  hsl(225, 62%, 95%);
+                border-radius: 20px;
+                margin: 0  4em;
+                height: 90px;
+                 
+                .same-row{
+                            display: inline-block;
+                            position: relative;
+                            right:50px;
+                            
+                .atext{
+                   
+                    font-family: 'Red Hat Display', sans-serif;
+                    font-weight: 900;
+                    color: hsl(223, 47%, 23%);
+                    
+
+                }
+               
+                
+                img.audio{
+                    vertical-align: text-top;
+                    padding-right: 1em;
+                    
+                }
+            }
+
+                .p1{
+                    position: absolute;
+                    font-family: 'Red Hat Display', sans-serif;
+                    font-weight: 500;
+                    color:  hsl(224, 23%, 55%);
+                    font-size: 16px;
+                    text-align: center;
+                    bottom: 1px;
+                    left: 12px;
+                   
+
+                }
+
+                a{
+                    cursor: pointer;
+                    font-family: 'Red Hat Display', sans-serif;
+                    font-size: 16px;
+                    font-weight: 700;
+                    position: relative;
+                    left: 15em;
+                    bottom: 3em;
+                    color: hsl(245, 75%, 52%);
+
+                }
+            }
+
+            button{
+                width: 24em;
+                height: 4em;
+                margin: 2em 5em 1em 5em;
+                border-radius: 10px;
+                border: none;
+                background-color: hsl(245, 75%, 52%);
+                font-family: 'Red Hat Display', sans-serif;
+                font-weight: 700;
+                color: white;
+                box-shadow: 0px 20px 10px hsl(225, 62%, 95%);
+                cursor: pointer;
+
+
+            }
+            #p3{
+                font-family: 'Red Hat Display', sans-serif;
+                font-weight: 700;
+                color:  hsl(224, 23%, 55%);
+                font-size: 15px;
+                padding-bottom: 1em;
+                position: relative;
+                bottom: 10px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: hsl(228, 90%, 74%);
+                color: white;
+            }
+            a:hover {
+                color: hsl(228, 90%, 74%);
+            }
+
+            
+           
+        }
+        
+    }
+    
+   
+}
+
+
+@media screen and (max-width:500px) {
+    .wave{
+        flex-shrink: 2;
+        flex-wrap: wrap;
+    }
+    
+}
+
+.attribution{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+}
